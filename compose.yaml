@@ -1,1 +1,16 @@
+version: '3'
 services:
+  db:
+    image: dm8:dm8_20240613_rev229704_x86_rh6_64
+    container_name: dameng
+    restart: always
+    privileged: true
+    volumes:
+      - './db/data:/opt/dmdbms/data'
+    ports:
+      - '30236:5236'
+    environment:
+      - CASE_SENSITIVE=1
+      - UNICODE_FLAG=1
+      - INSTANCE_NAME=dmdb
+      - SYSDBA_PWD=ksspasswjs

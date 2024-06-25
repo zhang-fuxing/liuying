@@ -1,11 +1,15 @@
+package com.zn.repository;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.zn.model.emtity.TestTab;
+import org.apache.ibatis.annotations.Mapper;
+
 /**
- * 
- * 
  * @author 张福兴
- * @date 2024/06/24
  * @version 1.0
+ * @date 2024/06/24
  * @email zhangfuxing1010@163.com
  */
-public interface TestTabMapper {
-    
+@Mapper
+public interface TestTabMapper extends BaseMapper<TestTab> {
 }
