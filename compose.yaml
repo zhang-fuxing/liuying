@@ -6,7 +6,7 @@ services:
     restart: always
     privileged: true
     volumes:
-      - './db/data:/opt/dmdbms/data'
+      - './db/dameng/data:/opt/dmdbms/data'
     ports:
       - '5236:5236'
     environment:
