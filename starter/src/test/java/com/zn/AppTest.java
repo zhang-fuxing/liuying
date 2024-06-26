@@ -1,38 +1,30 @@
 package com.zn;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+public class AppTest {
+    static Connection con = null;
+    static String cname = "dm.jdbc.driver.DmDriver";
+    static String url = "jdbc:dm://localhost:5236";
+    static String userid = "SYSDBA";
+    static String pwd = "ksspasswjs";
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    public static void main(String[] args) {
+        try {
+            Class.forName(cname);
+            con = DriverManager.getConnection(url, userid, pwd);
+            con.setAutoCommit(true);
+            Statement statement = con.createStatement();
+            ResultSet resultSet = statement.executeQuery("""
+                    SELECT * FROM "dbo"."Test_Tab"
+                    """);
+            System.out.println();
+        } catch (Exception e) {
+            System.out.println("[FAIL]conn database：" + e.getMessage());
+        }
     }
 }

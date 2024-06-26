@@ -1,5 +1,6 @@
-package com.zn.model.emtity;
+package com.zn.kcms.model.emtity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -10,9 +11,9 @@ import com.baomidou.mybatisplus.annotation.TableName;
  * @date 2024/06/24
  * @email zhangfuxing1010@163.com
  */
-@TableName("test_tab")
+@TableName
 public class TestTab {
-    @TableId
+    @TableId(type = IdType.AUTO)
     private Integer id;
     @TableField
     private String content;
@@ -51,5 +52,15 @@ public class TestTab {
 
     public void setUtime(String utime) {
         this.utime = utime;
+    }
+
+    @Override
+    public String toString() {
+        return "TestTab{" +
+               "id=" + id +
+               ", content='" + content + '\'' +
+               ", ctime='" + ctime + '\'' +
+               ", utime='" + utime + '\'' +
+               '}';
     }
 }

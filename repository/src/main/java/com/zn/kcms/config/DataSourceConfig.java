@@ -1,4 +1,4 @@
-package com.zn.config;
+package com.zn.kcms.config;
 
 import org.springframework.context.annotation.Configuration;
 

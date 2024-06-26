@@ -1,0 +1,17 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb
+    username: root
+    password: cssauxpajy
+
+mybatis-plus:
+  #  configuration:
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.zn.kcms
+  global-config:
+    db-config:
+      schema: testdb

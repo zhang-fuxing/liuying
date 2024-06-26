@@ -1,7 +1,7 @@
-package com.zn.repository;
+package com.zn.kcms.repository;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.zn.model.emtity.TestTab;
+import com.zn.kcms.model.emtity.TestTab;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

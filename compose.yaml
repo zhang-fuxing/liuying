@@ -8,9 +8,20 @@ services:
     volumes:
       - './db/data:/opt/dmdbms/data'
     ports:
-      - '30236:5236'
+      - '5236:5236'
     environment:
-      - CASE_SENSITIVE=1
+      - CASE_SENSITIVE=0
       - UNICODE_FLAG=1
       - INSTANCE_NAME=dmdb
-      - SYSDBA_PWD=ksspasswjs
+      - SYSDBA_PWD=cssauxpajy
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+    privileged: true
+    ports:
+      - '3306:3306'
+    volumes:
+      - './db/mysql/data:/var/lib/mysql'
+    environment:
+      - MYSQL_ROOT_PASSWORD=cssauxpajy

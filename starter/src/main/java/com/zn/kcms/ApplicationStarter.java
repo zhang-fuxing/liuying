@@ -1,7 +1,7 @@
-package com.zn.starter;
+package com.zn.kcms;
 
-import com.zn.model.emtity.TestTab;
-import com.zn.repository.TestTabMapper;
+import com.zn.kcms.model.emtity.TestTab;
+import com.zn.kcms.repository.TestTabMapper;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,15 +12,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2024/06/24
  * @email zhangfuxing1010@163.com
  */
-@SpringBootApplication(scanBasePackages = "com.zn")
-@MapperScan("com.zn.repository")
+@SpringBootApplication
+@MapperScan("com.zn.kcms.repository")
 public class ApplicationStarter {
     public static void main(String[] args) {
         var context = SpringApplication.run(ApplicationStarter.class, args);
         var contextBean = context.getBean(TestTabMapper.class);
-        TestTab entity = new TestTab();
-        entity.setContent("test");
-        entity.setCtime("now");
-        contextBean.insert(entity);
+        TestTab testTab = new TestTab();
+        testTab.setContent("test content......");
+        testTab.setCtime("now");
+        testTab.setUtime("now ++");
+        contextBean.insert(testTab);
     }
 }

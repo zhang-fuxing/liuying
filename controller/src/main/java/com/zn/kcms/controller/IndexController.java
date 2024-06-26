@@ -1,6 +1,6 @@
-package com.zn.controller;
+package com.zn.kcms.controller;
 
-import com.zn.model.emtity.TestTab;
+import com.zn.kcms.model.emtity.TestTab;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
