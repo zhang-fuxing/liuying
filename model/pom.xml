@@ -5,11 +5,10 @@
 	<parent>
 		<groupId>com.zn</groupId>
 		<artifactId>kcms</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>1.0.0</version>
+		<relativePath/>
 	</parent>
 	<artifactId>model</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>model</name>
 	<description>model</description>
 	<packaging>jar</packaging>

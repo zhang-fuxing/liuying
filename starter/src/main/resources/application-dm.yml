@@ -2,6 +2,9 @@ server:
   port: 8088
 
 spring:
+  freemarker:
+    suffix: .ftl
+    check-template-location: true
   datasource:
     driver-class-name: dm.jdbc.driver.DmDriver
     url: jdbc:dm://localhost:5236
