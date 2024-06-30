@@ -5,6 +5,7 @@
         <groupId>com.zn</groupId>
         <artifactId>kcms</artifactId>
         <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>starter</artifactId>
@@ -25,6 +26,10 @@
         <dependency>
             <groupId>com.zn</groupId>
             <artifactId>controller</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zn</groupId>
+            <artifactId>commons</artifactId>
         </dependency>
     </dependencies>
 

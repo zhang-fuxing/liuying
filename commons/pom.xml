@@ -8,10 +8,10 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>service</artifactId>
+    <artifactId>commons</artifactId>
     <packaging>jar</packaging>
 
-    <name>service</name>
+    <name>commons</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -20,17 +20,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.zn</groupId>
-            <artifactId>model</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>
