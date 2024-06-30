@@ -1,8 +1,8 @@
 package com.zn.kcms;
 
-import com.zn.kcms.db.DataSourceProvide;
-import com.zn.kcms.db.DynamicDataSource;
 import org.mybatis.spring.annotation.MapperScan;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -15,10 +15,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(scanBasePackages = "com.zn.kcms")
 @MapperScan("com.zn.kcms.repository")
 public class ApplicationStarter {
+    private static final Logger log = LoggerFactory.getLogger(ApplicationStarter.class);
+
     public static void main(String[] args) {
         var context = SpringApplication.run(ApplicationStarter.class, args);
-        var bean = context.getBean(DataSourceProvide.class);
-        var bean1 = context.getBean(DynamicDataSource.class);
-        System.out.println("http://127.0.0.1:8088/");
+        log.info("启动成功，项目访问地址: http://127.0.0.1:8088/");
     }
 }

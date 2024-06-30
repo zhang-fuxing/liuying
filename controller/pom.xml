@@ -41,6 +41,10 @@
             <groupId>com.zn</groupId>
             <artifactId>service-provided</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.zn</groupId>
+            <artifactId>commons</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

@@ -1,11 +1,10 @@
 package com.zn.kcms.controller;
 
 import com.zn.kcms.TestTabService;
+import com.zn.kcms.db.DSOption;
+import com.zn.kcms.model.emtity.TestTab;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
@@ -42,5 +41,27 @@ public class IndexController {
     public String postSubmit(@RequestBody Object args, Map<String, Object> data) {
 
         return null;
+    }
+
+    @ResponseBody
+    @GetMapping("/dm")
+    public Object submitToDm() {
+        DSOption.setDs("dameng");
+        TestTab testTab = new TestTab();
+        testTab.setContent("dameng content");
+        TestTab save = testTabService.save(testTab);
+        DSOption.clean();
+        return save;
+    }
+
+    @ResponseBody
+    @GetMapping("/mysql")
+    public Object submitToMysql() {
+        DSOption.setDs("mysql");
+        TestTab testTab = new TestTab();
+        testTab.setContent("mysql content");
+        TestTab save = testTabService.save(testTab);
+        DSOption.clean();
+        return save;
     }
 }

@@ -10,4 +10,6 @@ import com.zn.kcms.model.emtity.TestTab;
  */
 public interface TestTabService {
     TestTab getById(Integer id);
+
+    TestTab save(TestTab testTab);
 }

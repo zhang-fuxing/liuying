@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapp
 import com.zn.kcms.model.emtity.TestTab;
 import com.zn.kcms.repository.TestTabMapper;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author 张福兴
@@ -24,6 +25,14 @@ public class TestTabServiceImpl implements TestTabService {
         return new LambdaQueryChainWrapper<>(TestTab.class)
                 .eq(TestTab::getId, 1)
                 .one();
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public TestTab save(TestTab testTab) {
+        int insert = testTabMapper.insert(testTab);
+        if (insert <=0 ) throw new RuntimeException("插入失败");
+        return testTab;
     }
 
 }

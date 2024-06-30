@@ -3,3 +3,12 @@
 ```shell
 mvn install:install-file -Dfile=./lib/DmJdbcDriver18.jar -DgroupId=com.dameng -DartifactId=DmJdbcDriver18 -Dversion=18.x -Dpackaging=jar
 ```
+
+```shell
+# 启动docker安装的数据库服务
+docker-compose -f compose.yaml up -d
+```
+```shell
+# 关闭docker安装的数据库服务
+docker-compose -f compose.yaml down
+```
