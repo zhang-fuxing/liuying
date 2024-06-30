@@ -3,6 +3,7 @@ package com.zn.kcms.db;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import javax.annotation.PostConstruct;
+import javax.sql.DataSource;
 
 /**
  * @author 张福兴
@@ -16,6 +17,7 @@ public class SingleDataSource {
     private String url;
     private String username;
     private String password;
+    private Class<? extends DataSource> type;
 
     @PostConstruct
     public void init() {
@@ -56,5 +58,13 @@ public class SingleDataSource {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Class<? extends DataSource> getType() {
+        return type;
+    }
+
+    public void setType(Class<? extends DataSource> type) {
+        this.type = type;
     }
 }

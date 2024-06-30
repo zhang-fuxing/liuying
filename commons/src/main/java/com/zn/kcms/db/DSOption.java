@@ -26,4 +26,8 @@ public class DSOption {
     public static void clean() {
         THREAD_LOCAL.remove();
     }
+    public static void cleanAndSet(String dsKey) {
+        clean();
+        setDs(dsKey);
+    }
 }

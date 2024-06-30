@@ -6,20 +6,24 @@ spring:
     suffix: .ftl
     check-template-location: true
   datasource:
-    multiple:
-      primary: dameng
-      configs:
-        dameng:
-          driver-class-name: dm.jdbc.driver.DmDriver
-          url: jdbc:dm://localhost:5236?schema=dbo
-          username: SYSDBA
-          password: cssauxpajy
-        mysql:
-          driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://localhost:3306/testdb
-          username: root
-          password: cssauxpajy
-
+    driver-class-name: dm.jdbc.driver.DmDriver
+    url: jdbc:dm://localhost:5236?schema=dbo
+    username: SYSDBA
+    password: cssauxpajy
+    druid:
+      name: springboot-hibernate
+      # 配置初始化大小、最小、最大线程数
+      initial-size: 5
+      min-idle: 5
+      max-active: 30
+      # 获取连接时的最大等待时间
+      max-wait: 60000
+      # 一个连接在池中最小生存的时间，单位是毫秒
+      min-evictable-idle-time-millis: 300000
+      # 多久才进行一次检测需要关闭的空闲连接，单位是毫秒
+      time-between-eviction-runs-millis: 60000
 
 mybatis-plus:
+  #  configuration:
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   type-aliases-package: com.zn.kcms
