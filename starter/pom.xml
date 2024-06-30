@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.zn</groupId>
-        <artifactId>kcms</artifactId>
+        <groupId>com.z</groupId>
+        <artifactId>liuying</artifactId>
         <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -20,15 +20,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.zn</groupId>
+            <groupId>com.z</groupId>
             <artifactId>repository</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.zn</groupId>
+            <groupId>com.z</groupId>
             <artifactId>controller</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.zn</groupId>
+            <groupId>com.z</groupId>
             <artifactId>commons</artifactId>
         </dependency>
     </dependencies>
@@ -39,7 +39,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.zn.kcms.ApplicationStarter</mainClass>
+                    <mainClass>com.zn.liuying.ApplicationStarter</mainClass>
                 </configuration>
                 <executions>
                     <execution>

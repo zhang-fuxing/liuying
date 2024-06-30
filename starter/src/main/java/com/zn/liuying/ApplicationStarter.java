@@ -1,6 +1,6 @@
-package com.zn.kcms;
+package com.zn.liuying;
 
-import com.zn.kcms.db.DataSourceProvide;
+import com.zn.liuying.db.DataSourceProvide;
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,9 +14,9 @@ import org.springframework.context.annotation.Import;
  * @date 2024/06/24
  * @email zhangfuxing1010@163.com
  */
-@SpringBootApplication(scanBasePackages = "com.zn.kcms")
+@SpringBootApplication(scanBasePackages = "com.zn.liuying")
 @Import(DataSourceProvide.class)
-@MapperScan("com.zn.kcms.repository")
+@MapperScan("com.zn.liuying.repository")
 public class ApplicationStarter {
     private static final Logger log = LoggerFactory.getLogger(ApplicationStarter.class);
 

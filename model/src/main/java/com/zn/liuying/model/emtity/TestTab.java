@@ -1,4 +1,4 @@
-package com.zn.kcms.model.emtity;
+package com.zn.liuying.model.emtity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

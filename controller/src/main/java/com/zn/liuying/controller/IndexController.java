@@ -1,6 +1,6 @@
-package com.zn.kcms.controller;
+package com.zn.liuying.controller;
 
-import com.zn.kcms.TestTabService;
+import com.zn.liuying.TestTabService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

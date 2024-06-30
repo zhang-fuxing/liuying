@@ -1,6 +1,6 @@
-package com.zn.kcms;
+package com.zn.liuying;
 
-import com.zn.kcms.model.emtity.TestTab;
+import com.zn.liuying.model.emtity.TestTab;
 
 /**
  * @author 张福兴

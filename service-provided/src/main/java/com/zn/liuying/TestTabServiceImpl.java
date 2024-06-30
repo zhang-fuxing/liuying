@@ -1,8 +1,8 @@
-package com.zn.kcms;
+package com.zn.liuying;
 
 import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapper;
-import com.zn.kcms.model.emtity.TestTab;
-import com.zn.kcms.repository.TestTabMapper;
+import com.zn.liuying.model.emtity.TestTab;
+import com.zn.liuying.repository.TestTabMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;

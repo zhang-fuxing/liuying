@@ -1,4 +1,4 @@
-package com.zn.kcms.db;
+package com.zn.liuying.db;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

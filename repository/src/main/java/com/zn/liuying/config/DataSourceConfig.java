@@ -1,4 +1,4 @@
-package com.zn.kcms.config;
+package com.zn.liuying.config;
 
 import org.springframework.context.annotation.Configuration;
 

@@ -1,4 +1,4 @@
-package com.zn.kcms.db;
+package com.zn.liuying.db;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
