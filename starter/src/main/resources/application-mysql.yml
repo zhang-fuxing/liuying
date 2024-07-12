@@ -15,7 +15,7 @@ spring:
 mybatis-plus:
   #  configuration:
   #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  type-aliases-package: com.zn.kcms
+  type-aliases-package: com.zn.liuying
   global-config:
     db-config:
       schema: testdb

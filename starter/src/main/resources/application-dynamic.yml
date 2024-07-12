@@ -22,4 +22,4 @@ spring:
 
 
 mybatis-plus:
-  type-aliases-package: com.zn.kcms
+  type-aliases-package: com.zn.liuying
