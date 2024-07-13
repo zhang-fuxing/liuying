@@ -45,6 +45,9 @@
             <groupId>com.z</groupId>
             <artifactId>commons</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.z</groupId>
+            <artifactId>cloud-storage</artifactId>
+        </dependency>
     </dependencies>
 </project>

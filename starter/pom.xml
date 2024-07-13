@@ -35,10 +35,10 @@
             <groupId>com.z</groupId>
             <artifactId>sms</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.z</groupId>
-            <artifactId>cloud-storage</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.z</groupId>-->
+<!--            <artifactId>cloud-storage</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

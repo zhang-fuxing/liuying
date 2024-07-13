@@ -51,3 +51,6 @@ sms:
   onceUrl: http://open2.ucpaas.com/sms-server/variablesms
   multipleUrl: http://open2.ucpaas.com/sms-server/templatesms
   add-template: http://open2.ucpaas.com/sms-server/addsmstemplate
+
+cloud-storage:
+  server-name: upyun-files-zhangfx
