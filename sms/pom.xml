@@ -5,13 +5,12 @@
         <groupId>com.z</groupId>
         <artifactId>liuying</artifactId>
         <version>1.0.0</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>commons</artifactId>
+    <artifactId>sms</artifactId>
     <packaging>jar</packaging>
 
-    <name>commons</name>
+    <name>sms</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -19,17 +18,5 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-        </dependency>
     </dependencies>
 </project>
