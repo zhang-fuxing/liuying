@@ -46,3 +46,8 @@ sa-token:
   token-style: uuid
   # 是否输出操作日志
   is-log: true
+
+sms:
+  onceUrl: http://open2.ucpaas.com/sms-server/variablesms
+  multipleUrl: http://open2.ucpaas.com/sms-server/templatesms
+  add-template: http://open2.ucpaas.com/sms-server/addsmstemplate

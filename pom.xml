@@ -20,6 +20,7 @@
         <module>controller</module>
         <module>starter</module>
         <module>sms</module>
+        <module>cloud-storage</module>
     </modules>
 
     <properties>
@@ -107,6 +108,16 @@
             <dependency>
                 <groupId>com.z</groupId>
                 <artifactId>starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.z</groupId>
+                <artifactId>sms</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.z</groupId>
+                <artifactId>cloud-storage</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
