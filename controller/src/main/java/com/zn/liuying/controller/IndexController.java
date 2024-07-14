@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -27,8 +29,14 @@ public class IndexController {
     @GetMapping("/")
     public String index(Map<String, Object> data) {
         data.put("name", "zhangfx");
-        data.put("tabinfo", testTabService.getById(1));
+        data.put("articles", List.of(1,2,3));
+        data.put("dire", new HashMap<String, Object>());
         return "index";
+    }
+
+    @GetMapping("/getArticles")
+    public List<?> getArticles() {
+        return List.of(1,2,3);
     }
 
     @GetMapping("/test")

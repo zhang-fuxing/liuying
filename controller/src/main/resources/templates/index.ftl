@@ -5,13 +5,12 @@
     <title>Welcome</title>
 </head>
 <body>
-<h1>hello,${name}!!!</h1>
 <div>
-    ${tabinfo.id}<br/>
-    ${tabinfo.content}<br/>
-    ${tabinfo.ctime}<br/>
-    ${tabinfo.utime}<br/>
+    <@ArticleList count=4 tip='true'; list, map >
+        <#list list as item>
+            <li>${item}</li>
+        </#list>
+    </@ArticleList>
 </div>
-<a href="/test?hex='tjjiadfjie'">to test</a>
 </body>
 </html>
